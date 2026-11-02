@@ -14,7 +14,7 @@ public class nilaikelompok02 {
             int nomorKelompok = 1;
             double rataTertinggi = -1;
             int kelompokTerbaik = 0;
-
+            
             while (nomorKelompok <= jumlahKelompok) {
                 System.out.println("Kelompok " + nomorKelompok);
                 double totalNilai = 0;
