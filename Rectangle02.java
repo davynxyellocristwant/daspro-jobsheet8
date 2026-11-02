@@ -1,31 +1,18 @@
 import java.util.Scanner;
-public class Triangle02 {
+public class Rectangle02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan nilai n = ");
-        int n = sc.nextInt();
+        System.out.print("Masukkan jumlah baris: ");
+        int baris = sc.nextInt();
+        System.out.print("Masukkan jumlah kolom: ");
+        int kolom = sc.nextInt();
 
-        int i = 1;
-        while (i <= n) {
-            int j = 1;
-            while (j <= i) {
-                System.out.println("*");
-                j++;
-            }
-            System.out.println();
-            i++;
-        }
-
-        i = n;
-        while (i >= 1) {
-            int j = 1;
-            while (j <= i) {
+        for (int i = 1; i <= baris; i++) {
+            for (int j = 1; j <= kolom; j++) {
                 System.out.print("*");
-                j++;
             }
             System.out.println();
-            i--;
         }
 
         sc.close();
